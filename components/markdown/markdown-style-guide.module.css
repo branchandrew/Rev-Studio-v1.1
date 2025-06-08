@@ -1,0 +1,166 @@
+.markdownGuide h1 {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.markdownGuide h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.markdownGuide h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 1.25em;
+  margin-bottom: 0.75em;
+}
+
+.markdownGuide h4 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 1.25em;
+  margin-bottom: 0.75em;
+}
+
+.markdownGuide h5 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 1.25em;
+  margin-bottom: 0.75em;
+}
+
+.markdownGuide h6 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.25em;
+  margin-bottom: 0.75em;
+}
+
+/* Add some basic table styling */
+.markdownGuide table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.markdownGuide th,
+.markdownGuide td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.markdownGuide th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.markdownGuide tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Add spacing between paragraphs */
+.markdownGuide p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+/* Update the list styling section to explicitly set list-style-type */
+
+/* Add spacing for lists */
+.markdownGuide ul,
+.markdownGuide ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+.markdownGuide ul {
+  list-style-type: disc;
+}
+
+.markdownGuide ul ul {
+  list-style-type: circle;
+}
+
+.markdownGuide ul ul ul {
+  list-style-type: square;
+}
+
+.markdownGuide ol {
+  list-style-type: decimal;
+}
+
+.markdownGuide ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdownGuide ol ol ol {
+  list-style-type: lower-roman;
+}
+
+.markdownGuide li {
+  margin-bottom: 0.5em;
+  display: list-item; /* Ensure list items display as list items */
+}
+
+.markdownGuide li > ul,
+.markdownGuide li > ol {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Add spacing for blockquotes */
+.markdownGuide blockquote {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border-left: 4px solid #e0e0e0;
+  background-color: #f8f8f8;
+}
+
+.markdownGuide blockquote p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Add spacing for code blocks */
+.markdownGuide pre {
+  margin: 1em 0;
+  padding: 1em;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.markdownGuide code {
+  background-color: #f0f0f0;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+.markdownGuide pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Add spacing for horizontal rules */
+.markdownGuide hr {
+  margin: 2em 0;
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Ensure the first element doesn't have extra top margin */
+.markdownGuide > *:first-child {
+  margin-top: 0;
+}
+
+/* Ensure the last element doesn't have extra bottom margin */
+.markdownGuide > *:last-child {
+  margin-bottom: 0;
+}
