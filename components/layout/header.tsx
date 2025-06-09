@@ -77,7 +77,7 @@ export function Header(props: HeaderProps) {
 
   return (
     <TooltipProvider>
-      <header id="header" className="w-full pt-4 pr-4 pl-4 pb-0 lg:px-6 relative bg-zinc-50">
+      <header id="header" className="w-full pt-3 pr-4 pl-4 pb-3 lg:px-6 relative bg-zinc-50">
         <div className="flex w-full">
           {/* Left section - aligns with AI chat panel */}
           <div className="hidden md:flex w-1/3 min-w-[350px] max-w-[468px] items-center">
