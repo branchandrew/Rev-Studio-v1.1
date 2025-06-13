@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Drawer, DrawerContent } from "@/components/ui/drawer"
 import { useIsMobile } from "@/hooks/use-mobile"
+import { toast } from "sonner"
 
 interface HistoryToolbarProps {
   className?: string
@@ -187,7 +188,14 @@ export function HistoryToolbar({ className, compact = false }: HistoryToolbarPro
   }, [])
 
   const handleDeleteChat = (id: string) => {
+    const chatToDelete = chatHistory.find((chat) => chat.id === id)
     setChatHistory(chatHistory.filter((chat) => chat.id !== id))
+
+    if (chatToDelete) {
+      toast(`"${chatToDelete.title}" has been deleted from your chat history.`, {
+        duration: 2000,
+      })
+    }
   }
 
   const handleSelectChat = (id: string) => {
